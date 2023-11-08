@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db-ada.cjvdqhzq38nr.us-east-2.rds.amazonaws.com:5432/postgres
+    username: root
+    password: ProjetoAda123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl.auto: update
+        default_schema: projetoada
+    show-sql: true
+server:
+  port: 8081
